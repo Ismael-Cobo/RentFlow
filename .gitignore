@@ -5,3 +5,4 @@ riderModule.iml
 /_ReSharper.Caches/
 .containers
 **/appsettings.Development.json
+**/appsettings.json
