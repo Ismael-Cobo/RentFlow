@@ -1,0 +1,7 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\RentFlow.Common.Presentation\RentFlow.Common.Presentation.csproj" />
+    <ProjectReference Include="..\..\Identity\RentFlow.Modules.Identity.IntegrationEvents\RentFlow.Modules.Identity.IntegrationEvents.csproj" />
+    <ProjectReference Include="..\RentFlow.Modules.Rentals.Application\RentFlow.Modules.Rentals.Application.csproj" />
+  </ItemGroup>
+</Project>

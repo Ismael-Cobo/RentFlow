@@ -1,0 +1,29 @@
+using RentFlow.Modules.Rentals.Domain.Booking;
+
+namespace RentFlow.Modules.Rentals.Application.Bookings.GetBooking;
+
+public sealed record GetBookingResponse(
+    Guid Id,
+    Guid CustomerId,
+    Guid VehicleId,
+    DateOnly StartPeriod,
+    DateOnly EndPeriod,
+    BookingStatus Status,
+    int BasePrice,
+    int TotalPrice,
+    DateTime CreatedAt,
+    IReadOnlyCollection<GetBookingExtraResponse> Extras)
+{
+    internal static GetBookingResponse FromBooking(Booking booking) =>
+        new(
+            booking.Id,
+            booking.CustomerId,
+            booking.VehicleId,
+            booking.StartPeriod,
+            booking.EndPeriod,
+            booking.Status,
+            booking.BasePrice,
+            booking.TotalPrice,
+            booking.CreatedAt,
+            booking.Extras.Select(GetBookingExtraResponse.FromBookingExtra).ToArray());
+}

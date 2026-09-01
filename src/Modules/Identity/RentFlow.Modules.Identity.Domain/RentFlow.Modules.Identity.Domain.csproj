@@ -1,0 +1,5 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\RentFlow.Common.Domain\RentFlow.Common.Domain.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,6 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\RentFlow.Common.Application\RentFlow.Common.Application.csproj" />
+    <ProjectReference Include="..\RentFlow.Modules.Fleet.Domain\RentFlow.Modules.Fleet.Domain.csproj" />
+  </ItemGroup>
+</Project>

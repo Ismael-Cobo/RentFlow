@@ -1,0 +1,20 @@
+# This is a generated file. Not intended for manual editing.
+services:
+  rentFlow.api:
+    build:
+      context: "C:\\Users\\ismae\\Documents\\RentFlow"
+      dockerfile: "src/API/Rentflow.Api/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net10.0/Rentflow.Api.dll"
+    environment:
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "rentflowapi:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\ismae\\Documents\\RentFlow\\src\\API\\Rentflow.Api:/app:rw"
+    - "C:\\Users\\ismae\\Documents\\RentFlow:/src:rw"
+    - "C:\\Users\\ismae\\.nuget\\packages:/home/app/.nuget/packages"
+    working_dir: "/app"

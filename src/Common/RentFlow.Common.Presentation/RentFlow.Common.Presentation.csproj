@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <ProjectReference Include="..\RentFlow.Common.Application\RentFlow.Common.Application.csproj" />
+      <ProjectReference Include="..\RentFlow.Common.Domain\RentFlow.Common.Domain.csproj" />
+      <ProjectReference Include="..\Rentflow.Common.Infrastructure\Rentflow.Common.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MassTransit.Abstractions" Version="8.5.10" />
+    </ItemGroup>
+
+</Project>
